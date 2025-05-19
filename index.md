@@ -19,7 +19,7 @@ Currently conducting research at **XLIM Research Institute** and working as a vi
 ---
 
 ### 📄 CV
-[Download my CV](Haftu_CV.pdf)
+[Download my CV](KahsayCV.pdf)
 
 ---
 
