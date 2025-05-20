@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haftu Hiluf Kahsay | RF/MMIC Design Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+      animation: fadeIn 0.5s ease-in;
+    }
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #bf1e2e;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #bf1e2e;
+    }
+    .hero-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #bf1e2e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .btn:hover {
+      background-color: #991624;
+    }
+    .dark-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 100;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    body.dark-mode {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
+    body.dark-mode a {
+      color: #4aa3ff;
+    }
+  </style>
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+  <nav>
+    <a href="skills.html">Skills</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Haftu Hiluf Kahsay</h1>
+  <p><strong>RF/MMIC Design Engineer</strong> | PhD Researcher in High-Frequency Electronics</p>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/RF_and_microwave_circuits_on_chip.jpg" alt="RF MMIC Example" class="hero-img" />
+
+  <p>
+    I am a PhD researcher and RF/MMIC design engineer specializing in Ka-band GaN power amplifier design and high-frequency circuit architectures.
+    My passion lies in building high-performance and manufacturable mmWave circuits for advanced wireless communication and radar systems.
+    I combine expertise in transistor-level simulation, EM modeling, and layout, with experience in leading tools such as ADS, Momentum, HFSS, CST, and Cadence.
+  </p>
+
+  <p>
+    My background spans academic research and industrial innovation. I aim to contribute to the next generation of RF front-ends for 5G, satellite, and defense applications.
+  </p>
+
+  <a class="btn" href="KahsayCV.pdf" target="_blank">Download My CV</a>
+
+<script>
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+  }
+</script>
+</body>
+</html>
