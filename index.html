@@ -55,6 +55,17 @@
       border-radius: 50%;
       margin: 0 0 1rem 1rem;
     }
+    details {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      border-radius: 5px;
+      background: #fff;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
     @media (max-width: 600px) {
       body {
         padding: 1rem;
@@ -94,51 +105,67 @@
 
   <div class="section" id="certificates">
     <h2>Certificates & Training</h2>
-    <ul>
-      <li><strong><a href="UMS_Foundry_Training.pdf" target="_blank">UMS Foundry Training Course</a></strong><br>
-        Hands-on GaN MMIC design using UMS PDK and layout strategies.</li>
-      <li><strong><a href="European_Research_Observer.pdf" target="_blank">European Research Young Observer</a></strong><br>
-        Observed multidisciplinary RF innovation and collaboration across Europe.</li>
-      <li><strong><a href="Radar_in_a_day.pdf" target="_blank">Design Radar in a Day</a></strong><br>
-        Quick-start training on radar RF chain simulation and design.</li>
-      <li><strong><a href="Teaching_Certificate.pdf" target="_blank">Teaching Experience</a></strong><br>
-        Lecturer and lab supervisor in electronics and communications (2019–2020).</li>
-    </ul>
+    <details>
+      <summary><strong>UMS Foundry Training Course</strong></summary>
+      <p>Hands-on GaN MMIC design using UMS PDK and layout strategies.</p>
+    </details>
+    <details>
+      <summary><strong>European Research Young Observer</strong></summary>
+      <p>Observed multidisciplinary RF innovation and collaboration across Europe.</p>
+    </details>
+    <details>
+      <summary><strong>Design Radar in a Day</strong></summary>
+      <p>Quick-start training on radar RF chain simulation and design.</p>
+    </details>
+    <details>
+      <summary><strong>Teaching Experience</strong></summary>
+      <p>Lecturer and lab supervisor in electronics and communications (2019–2020).</p>
+    </details>
   </div>
 
   <div class="section" id="publications">
     <h2>Publications</h2>
-    <ul>
-      <li>
-        <strong>Design and Characterization of a Ka-Band GaN Power Amplifier</strong><br>
-        Presented at EuMIC 2024<br>
+    <details>
+      <summary><strong>Design and Characterization of a Ka-Band GaN Power Amplifier</strong></summary>
+      <p>Presented at EuMIC 2024<br>
         <a href="KaBand_PA_Paper.pdf" target="_blank">[PDF]</a>
         <a href="https://doi.org/10.1234/example-doi" target="_blank">[DOI]</a>
-      </li>
-      <li>
-        <strong>Investigation of Outphasing Architecture in MMIC Design</strong><br>
-        Submitted to IEEE Transactions on Microwave Theory and Techniques<br>
+      </p>
+    </details>
+    <details>
+      <summary><strong>Investigation of Outphasing Architecture in MMIC Design</strong></summary>
+      <p>Submitted to IEEE Transactions on Microwave Theory and Techniques<br>
         <a href="Outphasing_Architecture.pdf" target="_blank">[PDF]</a>
-      </li>
-    </ul>
+      </p>
+    </details>
   </div>
 
   <div class="section" id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Ka-band Doherty Power Amplifier</strong> – Designed and validated a Doherty PA using GaN-on-SiC. Achieved efficient back-off performance.</li>
-      <li><strong>Custom Load-Pull Setup</strong> – Built an ADS-based load-pull simulation for performance evaluation across complex impedances.</li>
-    </ul>
+    <details>
+      <summary><strong>Ka-band Doherty Power Amplifier</strong></summary>
+      <p>Designed and validated a Doherty PA using GaN-on-SiC. Achieved efficient back-off performance.</p>
+    </details>
+    <details>
+      <summary><strong>Custom Load-Pull Setup</strong></summary>
+      <p>Built an ADS-based load-pull simulation for performance evaluation across complex impedances.</p>
+    </details>
   </div>
 
   <div class="section">
     <h2>Technical Discussions</h2>
-    <ul>
-      <li><a href="posts/mmic-design-flow.html">MMIC Design Flow: From Idea to Layout</a></li>
-      <li><a href="posts/em-simulation-tips.html">Tips for Momentum & HFSS EM Simulation</a></li>
-      <li><a href="posts/outphasing-architecture.html">Understanding Outphasing for RF Power Amplifiers</a></li>
-    </ul>
-    <p>I regularly share notes on RF design, circuit challenges, and simulation workflows.</p>
+    <details>
+      <summary>MMIC Design Flow: From Idea to Layout</summary>
+      <p><a href="posts/mmic-design-flow.html">Read more</a></p>
+    </details>
+    <details>
+      <summary>Tips for Momentum & HFSS EM Simulation</summary>
+      <p><a href="posts/em-simulation-tips.html">Read more</a></p>
+    </details>
+    <details>
+      <summary>Understanding Outphasing for RF Power Amplifiers</summary>
+      <p><a href="posts/outphasing-architecture.html">Read more</a></p>
+    </details>
   </div>
 
   <div class="section">
